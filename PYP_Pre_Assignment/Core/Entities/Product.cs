@@ -7,5 +7,7 @@ namespace Core.Entities
         public string Name { get; set; }
         public decimal SalePrice { get; set; }
         public decimal ManufacturingPrice { get; set; }
+        public Guid SegmentId { get; set; }
+        public Segment Segment { get; set; }
     }
 }
