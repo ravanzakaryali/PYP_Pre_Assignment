@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYP_Pre_Assignment.API", "PYP_Pre_Assignment\PYP_Pre_Assignment.API.csproj", "{96561E4F-A19E-47DB-B48B-E9681776E1B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{8A8EC944-6E82-4FA7-9B5A-C387B3E914F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{96561E4F-A19E-47DB-B48B-E9681776E1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96561E4F-A19E-47DB-B48B-E9681776E1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96561E4F-A19E-47DB-B48B-E9681776E1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A8EC944-6E82-4FA7-9B5A-C387B3E914F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8EC944-6E82-4FA7-9B5A-C387B3E914F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8EC944-6E82-4FA7-9B5A-C387B3E914F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8EC944-6E82-4FA7-9B5A-C387B3E914F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
