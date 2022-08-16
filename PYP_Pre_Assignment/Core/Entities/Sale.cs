@@ -9,5 +9,5 @@ namespace Core.Entities
         public Product Product { get; set; }
         public double UnitsSale { get; set; }
         public double? Discount { get; set; } //%
-}
+    }
 }
