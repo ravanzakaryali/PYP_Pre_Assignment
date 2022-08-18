@@ -39,7 +39,7 @@ namespace Core.Abstracts.Base
             bool isOrderBy = true,
             bool tracking = true,
             params string[] includes);
-        Task<TEntity> AddAsync(TEntity entity);
+        Task AddAsync(TEntity entity);
         TEntity Remove(TEntity entity);
         TEntity Update(TEntity entity);
         Task<int> SaveAsync();
