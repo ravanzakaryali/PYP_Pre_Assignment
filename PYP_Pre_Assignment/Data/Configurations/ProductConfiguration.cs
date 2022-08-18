@@ -10,8 +10,6 @@ namespace Data.Configurations
         {
             builder.Property(p => p.Id).HasDefaultValueSql("NEWID()");
             builder.Property(p => p.Name).IsRequired();
-            builder.Property(p=>p.SalePrice).IsRequired();
-            builder.Property(p=>p.ManufacturingPrice).IsRequired();
         }
     }
 }
