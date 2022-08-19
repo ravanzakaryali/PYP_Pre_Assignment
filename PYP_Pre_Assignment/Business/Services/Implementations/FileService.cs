@@ -1,4 +1,5 @@
 ﻿using Business.DTOs.File;
+using Business.Extensions;
 using Core.Abstracts.UnitOfWork;
 using Microsoft.AspNetCore.Http;
 
@@ -13,7 +14,6 @@ namespace Business.Services.Implementations
         }
         //public Task FileUploadToDb(FileUploadDto file)
         //{
-
         //}
     }
 }
