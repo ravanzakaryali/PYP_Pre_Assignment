@@ -10,7 +10,7 @@ namespace Core.Entities
         public DateTime Date { get; set; }
         public Guid PriceId { get; set; }
         public Price Price { get; set; }
-        public Guid ProductId { get; set; }
+        public Guid ProductId { get; set; } 
         public Product Product { get; set; }
         public Guid SegmentId { get; set; }
         public Segment Segment { get; set; }

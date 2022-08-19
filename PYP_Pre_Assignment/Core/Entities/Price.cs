@@ -8,6 +8,6 @@ namespace Core.Entities
         public decimal ManufacturingPrice { get; set; }
         public Guid ProductId { get; set; }
         public Product Product { get; set; }
-
+        public ICollection<SaleTransaction> SaleTransactions { get; set; }
     }
 }
