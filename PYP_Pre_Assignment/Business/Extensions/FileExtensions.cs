@@ -30,12 +30,12 @@ namespace Business.Extensions
             }
             return false;
         }
-        public static string FileUploadAsync(this IFormFile file, string enviroment,params string[] folders)
+        public static async Task<string> FileUploadAsync(this IFormFile file, string root,params string[] folders)
         {
-            string fileNewName = Path.Combine(Helper.GenerateUniqueDateName() + file.FileName);
+            string fileNewName = Path.Combine(Helper.GenerateUniqueDateName().CharacterRegulatory() + file.FileName);
             string rootInFolder = folders.Aggregate((result, folder) => Path.Combine(result, folder));
             string path = Path.Combine(root, rootInFolder, fileNewName);
-            using (FileStream fs = new FileStream(path, FileMode.Create))
+            using (FileStream fs = new(path, FileMode.Create))
             {
                 await file.CopyToAsync(fs);
             }

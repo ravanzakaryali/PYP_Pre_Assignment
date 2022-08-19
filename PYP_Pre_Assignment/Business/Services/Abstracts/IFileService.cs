@@ -1,4 +1,5 @@
 ﻿using Business.DTOs.File;
+using Microsoft.AspNetCore.Http;
 
 namespace Business.Services.Abstracts
 {
