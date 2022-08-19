@@ -3,6 +3,7 @@ using Business.DTOs.File;
 using Business.Exceptions.FileExceptions;
 using Business.Extensions;
 using Core.Abstracts.UnitOfWork;
+using Core.Entities;
 using Ganss.Excel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
@@ -13,9 +14,10 @@ namespace Business.Services.Implementations
     {
         readonly IUnitOfWork _unitOfWork;
         readonly IHostEnvironment _environment;
-        public FileService(IUnitOfWork unitOfWork)
+        public FileService(IUnitOfWork unitOfWork, IHostEnvironment environment)
         {
             _unitOfWork = unitOfWork;
+            _environment = environment;
         }
         public async Task ExcelToDb(FileUploadDto file)
         {
@@ -28,7 +30,7 @@ namespace Business.Services.Implementations
                 throw new FileSizeException("The file type should be xls or xlxs");
             }
             IEnumerable<ExcelDataDto> excelData =  new ExcelMapper(await FileUploadAsync(file.File)).Fetch<ExcelDataDto>();
-
+           
         }
         private async Task<string> FileUploadAsync(IFormFile file)
         {
