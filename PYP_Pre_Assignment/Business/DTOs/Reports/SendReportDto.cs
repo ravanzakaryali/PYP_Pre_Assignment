@@ -2,7 +2,7 @@
 
 namespace Business.DTOs.Reports
 {
-    public class SendReport
+    public class SendReportDto
     {
         public Report Report { get; set; }
         public List<EmailDto> SendEmails { get; set; }
