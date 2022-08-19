@@ -1,4 +1,5 @@
-﻿using Business.DTOs.Excel;
+﻿using Business.Common;
+using Business.DTOs.Excel;
 using Business.DTOs.File;
 using Business.Exceptions.FileExceptions;
 using Business.Extensions;
@@ -101,6 +102,13 @@ namespace Business.Services.Implementations
                 await _unitOfWork.SaleTransactionRepository.AddAsync(saleTransaction);
             }
             await _unitOfWork.SaveAsync();
+        }
+        public string ObjectToExcel<T>(IEnumerable<T> @object, string fileName)
+        {
+            ExcelMapper mapper = new();
+            var newFileName = Helper.GenerateUniqueDateName() + fileName;
+            mapper.Save(fileName, @object, "SheetName", true);
+            return newFileName;
         }
     }
 }

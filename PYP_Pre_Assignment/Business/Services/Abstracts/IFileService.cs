@@ -7,5 +7,6 @@ namespace Business.Services.Abstracts
     {
         Task ExcelToDb(FileUploadDto file);
         Task<string> FileUploadAsync(IFormFile file);
+        string ObjectToExcel<T>(IEnumerable<T> @object, string fileName);
     }
 }
