@@ -1,4 +1,5 @@
-﻿using Business.DTOs.File;
+﻿using Business.DTOs.Excel;
+using Business.DTOs.File;
 using Business.Exceptions.FileExceptions;
 using Business.Extensions;
 using Core.Abstracts.UnitOfWork;
@@ -16,7 +17,7 @@ namespace Business.Services.Implementations
         {
             _unitOfWork = unitOfWork;
         }
-        public Task ExcelToDb(FileUploadDto file)
+        public async Task ExcelToDb(FileUploadDto file)
         {
             if (!file.File.CheckFileSize(5120))
             {
@@ -26,9 +27,10 @@ namespace Business.Services.Implementations
             {
                 throw new FileSizeException("The file type should be xls or xlxs");
             }
+            IEnumerable<ExcelDataDto> excelData =  new ExcelMapper(await FileUploadAsync(file.File)).Fetch<ExcelDataDto>();
 
         }
-        private async Task<string> FileUpload(IFormFile file)
+        private async Task<string> FileUploadAsync(IFormFile file)
         {
             string path = Path.Combine(_environment.ContentRootPath, "upload", file.FileName);
             using (FileStream fs = new(path, FileMode.Create))
