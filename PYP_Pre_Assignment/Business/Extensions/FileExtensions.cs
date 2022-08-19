@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Business.Common;
+using Microsoft.AspNetCore.Http;
 
 namespace Business.Extensions
 {
@@ -28,6 +29,17 @@ namespace Business.Extensions
                 return true;
             }
             return false;
+        }
+        public static string FileUploadAsync(this IFormFile file, string enviroment,params string[] folders)
+        {
+            string fileNewName = Path.Combine(Helper.GenerateUniqueDateName() + file.FileName);
+            string rootInFolder = folders.Aggregate((result, folder) => Path.Combine(result, folder));
+            string path = Path.Combine(root, rootInFolder, fileNewName);
+            using (FileStream fs = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(fs);
+            }
+            return fileNewName;
         }
     }
 }
