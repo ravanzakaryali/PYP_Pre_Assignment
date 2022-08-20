@@ -18,84 +18,67 @@ namespace Business.Services.Implementations
             _unitOfWork = unitOfWork;
             _sendEndpointProvider = sendEndpointProvider;
         }
-        public async Task<List<GetSalesByEntityDto>> SalesByCountryAsync()
+        public async Task<SendReportMq> SendReport(SendReportDto reportDto)
         {
-            List<GetSalesByEntityDto> reports = await _unitOfWork.CountryRepository.GetAllWithSelectAsync(select: c => new GetSalesByEntityDto
-            {
-                Name = c.Name,
-                Discounts = c.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
-                GrosSales = c.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
-                UnitsSold = c.SaleTransactions.Sum(s => s.UnitSold),
-                Profit = c.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
-            }, predicate: null, tracking: false, "SaleTransactions", "SaleTransactions.Price");
             SendReportMq sendReport = new()
             {
-                Name = "sales_by_country",
-                ReportEntity = reports,
-                ReportDiscount = null
+                Emails = reportDto.SendEmails,
             };
-            await SendReportRabbitEntityMqAsync(sendReport);
-            return reports;
-        }
-        public async Task<List<GetSalesByEntityDto>> SalesBySegmentAsync()
-        {
-            List<GetSalesByEntityDto> reports = await _unitOfWork.SegmentRepository.GetAllWithSelectAsync(select: s => new GetSalesByEntityDto
+            switch (reportDto.Report)
             {
-                Name = s.Name,
-                Discounts = s.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
-                GrosSales = s.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
-                UnitsSold = s.SaleTransactions.Sum(s => s.UnitSold),
-                Profit = s.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
-            }, predicate: null, tracking: false, "SaleTransactions", "SaleTransactions.Price");
-            SendReportMq sendReport = new()
-            {
-                Name = "sales_by_segment",
-                ReportEntity = reports,
-                ReportDiscount = null
-            };
-            await SendReportRabbitEntityMqAsync(sendReport);
-            return reports;
-        }
-        public async Task<List<GetSalesByEntityDto>> SalesByProductAsync()
-        {
-            List<GetSalesByEntityDto> reports = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByEntityDto
-            {
-                Name = p.Name,
-                Discounts = p.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
-                GrosSales = p.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
-                UnitsSold = p.SaleTransactions.Sum(s => s.UnitSold),
-                Profit = p.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
-            }, predicate: null, tracking: false, "SaleTransactions", "Prices");
-            SendReportMq sendReport = new()
-            {
-                Name = "sales_by_product",
-                ReportEntity = reports,
-                ReportDiscount = null,
-
-            };
-            await SendReportRabbitEntityMqAsync(sendReport);
-            return reports;
-        }
-        public async Task<List<GetSalesByDiscount>> SalesByDiscountAsync()
-        {
-            List<GetSalesByDiscount> reports = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByDiscount
-            {
-                Name = p.Name,
-                Discounts = p.SaleTransactions.Average(p => p.Discounts),
-            }, predicate: null, tracking: false, "SaleTransactions", "Prices");
-            SendReportMq sendReport = new()
-            {
-                Name = "sales_by_discount",
-                ReportEntity = null,
-                ReportDiscount = reports
-            };
-            await SendReportRabbitEntityMqAsync(sendReport);
-            return reports;
-        }
-        private async Task SendReportRabbitEntityMqAsync(SendReportMq reports)
-        {
-            ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.SendReportQueue}"));
-            await sendEndpoint.Send(reports);
+                case Report.SalesByCountry:
+                    var salesByCountryReport = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(c => (c.CountryId),
+                        s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    List<GetSalesByEntityDto> reports = await _unitOfWork.CountryRepository.GetAllWithSelectAsync(select: c => new GetSalesByEntityDto
+                    {
+                        Name = c.Name,
+                        Discounts = c.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
+                        GrosSales = c.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
+                        UnitsSold = c.SaleTransactions.Sum(s => s.UnitSold),
+                        Profit = c.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
+                    }, predicate: s => salesByCountryReport.Contains(s.Id), tracking: false, "SaleTransactions", "SaleTransactions.Price");
+                    sendReport.ReportEntity = reports;
+                    sendReport.Name = "sales_by_country";
+                    return sendReport;
+                case Report.SalesBySegment:
+                    var salesSegment = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.SegmentId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    List<GetSalesByEntityDto> reportsBySegment = await _unitOfWork.SegmentRepository.GetAllWithSelectAsync(select: s => new GetSalesByEntityDto
+                    {
+                        Name = s.Name,
+                        Discounts = s.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
+                        GrosSales = s.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
+                        UnitsSold = s.SaleTransactions.Sum(s => s.UnitSold),
+                        Profit = s.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
+                    }, predicate: s => salesSegment.Contains(s.Id), tracking: false, "SaleTransactions", "SaleTransactions.Price");
+                    sendReport.ReportEntity = reportsBySegment;
+                    sendReport.Name = "sales_by_segment";
+                    return sendReport;
+                case Report.SalesByProduct:
+                    var salesProduct = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    List<GetSalesByEntityDto> reportsByProduct = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByEntityDto
+                    {
+                        Name = p.Name,
+                        Discounts = p.SaleTransactions.Sum(s => (s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100),
+                        GrosSales = p.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold),
+                        UnitsSold = p.SaleTransactions.Sum(s => s.UnitSold),
+                        Profit = p.SaleTransactions.Sum(s => s.Price.SalePrice * s.UnitSold - ((s.Price.SalePrice * s.UnitSold) * (s.Discounts) / 100) - (s.Price.ManufacturingPrice) * s.UnitSold)
+                    }, predicate: p => salesProduct.Contains(p.Id), tracking: false, "SaleTransactions", "Prices");
+                    sendReport.ReportEntity = reportsByProduct;
+                    sendReport.Name = "sales_by_product";
+                    return sendReport;
+                case Report.SalesByDiscount:
+                    var salesDiscount = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    List<GetSalesByDiscount> reportsByDiscount = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByDiscount
+                    {
+                        Name = p.Name,
+                        Discounts = p.SaleTransactions.Average(p => p.Discounts),
+                    }, predicate: p => salesDiscount.Contains(p.Id), tracking: false, "SaleTransactions", "Prices");
+                    sendReport.ReportDiscount = reportsByDiscount;
+                    sendReport.Name = "sales_by_dicsount";
+                    return sendReport;
+                default:
+                    throw new Exception("Not found");
+            }
         }
     }
 }
