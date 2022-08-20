@@ -40,4 +40,11 @@ namespace PYP_Pre_Assignment.API.Middelwares
             return errorResponse;
         }
     }
+    public static class ExceptionHandlerMiddelwareExtensions
+    {
+        public static IApplicationBuilder UseExceptionMiddelware(this IApplicationBuilder builder)
+        {
+            return builder.UseMiddleware<ExceptionHandlerMiddelware>();
+        }
+    }
 }

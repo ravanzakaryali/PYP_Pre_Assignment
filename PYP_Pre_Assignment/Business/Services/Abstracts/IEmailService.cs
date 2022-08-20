@@ -4,6 +4,6 @@ namespace Business.Services.Abstracts
 {
     public interface IEmailService
     {
-        Task SendEmailAsync(string subject, List<EmailDto> emails, string attachmentPath);
+        Task SendEmailAsync(string subject, List<EmailDto> emails, string attachmentPath,string fileName);
     }
 }

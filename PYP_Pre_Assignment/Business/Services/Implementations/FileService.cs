@@ -23,13 +23,13 @@ namespace Business.Services.Implementations
         }
         public async Task ExcelToDb(FileUploadDto file)
         {
-            if (!file.File.CheckFileSize(5120))
+            if (file.File.CheckFileSize(5120))
             {
-                throw new FileTypeException("File size should not exceed 5 mb");
+                throw new FileTypeException("File size should not exceed 5 msb");
             }
-            if (!file.File.CheckFileType(".xls", ".xlxs"))
+            if (!file.File.CheckFileType(".xls", ".xlsx"))
             {
-                throw new FileSizeException("The file type should be xls or xlxs");
+                throw new FileSizeException("The file type should be xls or xlsx");
             }
             IEnumerable<ExcelDataDto> excelDatas = new ExcelMapper(await FileUploadAsync(file.File)).Fetch<ExcelDataDto>();
             await DatabaseSaveAsync(excelDatas);
@@ -106,7 +106,7 @@ namespace Business.Services.Implementations
         public string ObjectToExcel<T>(IEnumerable<T> @object, string fileName)
         {
             ExcelMapper mapper = new();
-            var newFileName = Helper.GenerateUniqueDateName() + fileName;
+            var newFileName = fileName;
             string root = Path.Combine(_environment.ContentRootPath, "sendreports", newFileName);
             mapper.Save(root, @object, "SheetName", true);
             return root;

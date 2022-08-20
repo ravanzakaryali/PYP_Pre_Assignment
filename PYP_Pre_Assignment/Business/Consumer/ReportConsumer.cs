@@ -18,10 +18,10 @@ namespace Business.Consumer
         {
             string root = String.Empty;
             if (context.Message.ReportEntity is not null)
-                root = _fileService.ObjectToExcel(context.Message.ReportEntity, $"{context.Message.Name}.xlxs");
+                root = _fileService.ObjectToExcel(context.Message.ReportEntity, $"{context.Message.Name}.xlsx");
             if (context.Message.ReportDiscount is not null)
-                root = _fileService.ObjectToExcel(context.Message.ReportDiscount, $"{context.Message.Name}.xlxs");
-            await _emailService.SendEmailAsync(context.Message.Name, context.Message.Emails, root);
+                root = _fileService.ObjectToExcel(context.Message.ReportDiscount, $"{context.Message.Name}.xlsx");
+            await _emailService.SendEmailAsync(context.Message.Name, context.Message.Emails, root, $"{context.Message.Name}.xlsx");
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Business.Services.Implementations
                     sendReport.Name = "sales_by_country";
                     break;
                 case Report.SalesBySegment:
-                    var salesSegment = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.SegmentId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    var salesSegment = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.SegmentId), s => s.Date < reportDto.EndDate && s.Date > reportDto.StartDate, false);
                     List<GetSalesByEntityDto> reportsBySegment = await _unitOfWork.SegmentRepository.GetAllWithSelectAsync(select: s => new GetSalesByEntityDto
                     {
                         Name = s.Name,
@@ -54,7 +54,7 @@ namespace Business.Services.Implementations
                     sendReport.Name = "sales_by_segment";
                     break;
                 case Report.SalesByProduct:
-                    var salesProduct = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    var salesProduct = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date < reportDto.EndDate && s.Date > reportDto.StartDate, false);
                     List<GetSalesByEntityDto> reportsByProduct = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByEntityDto
                     {
                         Name = p.Name,
@@ -67,7 +67,7 @@ namespace Business.Services.Implementations
                     sendReport.Name = "sales_by_product";
                     break;
                 case Report.SalesByDiscount:
-                    var salesDiscount = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
+                    var salesDiscount = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date < reportDto.EndDate && s.Date > reportDto.StartDate, false);
                     List<GetSalesByDiscount> reportsByDiscount = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByDiscount
                     {
                         Name = p.Name,
