@@ -39,7 +39,7 @@ namespace Business.Services.Implementations
                     }, predicate: s => salesByCountryReport.Contains(s.Id), tracking: false, "SaleTransactions", "SaleTransactions.Price");
                     sendReport.ReportEntity = reports;
                     sendReport.Name = "sales_by_country";
-                    return sendReport;
+                    break;
                 case Report.SalesBySegment:
                     var salesSegment = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.SegmentId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
                     List<GetSalesByEntityDto> reportsBySegment = await _unitOfWork.SegmentRepository.GetAllWithSelectAsync(select: s => new GetSalesByEntityDto
@@ -52,7 +52,7 @@ namespace Business.Services.Implementations
                     }, predicate: s => salesSegment.Contains(s.Id), tracking: false, "SaleTransactions", "SaleTransactions.Price");
                     sendReport.ReportEntity = reportsBySegment;
                     sendReport.Name = "sales_by_segment";
-                    return sendReport;
+                    break;
                 case Report.SalesByProduct:
                     var salesProduct = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
                     List<GetSalesByEntityDto> reportsByProduct = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByEntityDto
@@ -65,7 +65,7 @@ namespace Business.Services.Implementations
                     }, predicate: p => salesProduct.Contains(p.Id), tracking: false, "SaleTransactions", "Prices");
                     sendReport.ReportEntity = reportsByProduct;
                     sendReport.Name = "sales_by_product";
-                    return sendReport;
+                    break;
                 case Report.SalesByDiscount:
                     var salesDiscount = await _unitOfWork.SaleTransactionRepository.GetAllWithSelectAsync(s => (s.ProductId), s => s.Date > reportDto.EndDate && s.Date < reportDto.StartDate, false);
                     List<GetSalesByDiscount> reportsByDiscount = await _unitOfWork.ProductRepository.GetAllWithSelectAsync(select: p => new GetSalesByDiscount
@@ -75,10 +75,14 @@ namespace Business.Services.Implementations
                     }, predicate: p => salesDiscount.Contains(p.Id), tracking: false, "SaleTransactions", "Prices");
                     sendReport.ReportDiscount = reportsByDiscount;
                     sendReport.Name = "sales_by_dicsount";
-                    return sendReport;
+                    break;
                 default:
                     throw new Exception("Not found");
+
             }
+            ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.SendReportQueue}"));
+            await sendEndpoint.Send(sendReport);
+            return sendReport;
         }
     }
 }

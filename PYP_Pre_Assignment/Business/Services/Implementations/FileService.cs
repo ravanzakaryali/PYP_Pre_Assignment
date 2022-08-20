@@ -107,8 +107,9 @@ namespace Business.Services.Implementations
         {
             ExcelMapper mapper = new();
             var newFileName = Helper.GenerateUniqueDateName() + fileName;
-            mapper.Save(fileName, @object, "SheetName", true);
-            return newFileName;
+            string root = Path.Combine(_environment.ContentRootPath, "sendreports", newFileName);
+            mapper.Save(root, @object, "SheetName", true);
+            return root;
         }
     }
 }
