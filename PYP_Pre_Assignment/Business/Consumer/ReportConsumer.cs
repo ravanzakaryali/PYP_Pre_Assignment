@@ -14,7 +14,6 @@ namespace Business.Consumer
             _fileService = fileService;
             _emailService = emailService;
         }
-
         public async Task Consume(ConsumeContext<SendReportMq> context)
         {
             string root = String.Empty;

@@ -36,6 +36,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Conf
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddScoped<IReportsService, ReportsService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
 var app = builder.Build();
