@@ -1,6 +1,7 @@
 ﻿using Business.DTOs.RabbitMq;
 using Business.Services.Abstracts;
 using MassTransit;
+using Microsoft.Extensions.Logging;
 
 namespace Business.Consumer
 {
@@ -8,11 +9,13 @@ namespace Business.Consumer
     {
         readonly IFileService _fileService;
         readonly IEmailService _emailService;
+        readonly ILogger _logger;
 
-        public ReportConsumer(IFileService fileService, IEmailService emailService)
+        public ReportConsumer(IFileService fileService, IEmailService emailService, ILogger logger)
         {
             _fileService = fileService;
             _emailService = emailService;
+            _logger = logger;
         }
         public async Task Consume(ConsumeContext<SendReportMq> context)
         {
@@ -22,6 +25,7 @@ namespace Business.Consumer
             if (context.Message.ReportDiscount is not null)
                 root = _fileService.ObjectToExcel(context.Message.ReportDiscount, $"{context.Message.Name}.xlsx");
             await _emailService.SendEmailAsync(context.Message.Name, context.Message.Emails, root, $"{context.Message.Name}.xlsx");
+            _logger.LogError($"Email {context.Message.Emails} report {context.Message.Name}", context.Message.Name);
         }
     }
 }

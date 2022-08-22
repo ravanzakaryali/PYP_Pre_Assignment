@@ -1,0 +1,2727 @@
+{
+  "Business.dll": {
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Validations\\EmailValidation.cs": {
+      "Business.Validations.EmailValidation": {
+        "System.Void Business.Validations.EmailValidation::.ctor()": {
+          "Lines": {
+            "9": 2,
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Validations\\FileValidation.cs": {
+      "Business.Validations.FileValidation": {
+        "System.Void Business.Validations.FileValidation::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Validations\\SendReportValidator.cs": {
+      "Business.Validations.SendReportValidator": {
+        "System.Void Business.Validations.SendReportValidator::.ctor()": {
+          "Lines": {
+            "8": 2,
+            "9": 2,
+            "10": 2,
+            "11": 2,
+            "12": 2,
+            "13": 2,
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 2,
+            "18": 2,
+            "20": 4,
+            "21": 2,
+            "22": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Services\\Implementations\\EmailService.cs": {
+      "Business.Services.Implementations.EmailService": {
+        "System.Void Business.Services.Implementations.EmailService::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "Business.Services.Implementations.EmailService/<SendEmailAsync>d__2": {
+        "System.Void Business.Services.Implementations.EmailService/<SendEmailAsync>d__2::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 634,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 634,
+              "EndOffset": 639,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Services\\Implementations\\FileService.cs": {
+      "Business.Services.Implementations.FileService": {
+        "System.String Business.Services.Implementations.FileService::ObjectToExcel(System.Collections.Generic.IEnumerable`1<T>,System.String)": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0
+          },
+          "Branches": []
+        },
+        "System.Void Business.Services.Implementations.FileService::.ctor(Core.Abstracts.UnitOfWork.IUnitOfWork,Microsoft.Extensions.Hosting.IHostEnvironment)": {
+          "Lines": {
+            "19": 5,
+            "20": 5,
+            "21": 5,
+            "22": 5,
+            "23": 5
+          },
+          "Branches": []
+        }
+      },
+      "Business.Services.Implementations.FileService/<>c__DisplayClass5_0": {
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__0(Core.Entities.Segment)": {
+          "Lines": {
+            "57": 2395
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__1(Core.Entities.Product)": {
+          "Lines": {
+            "66": 3124
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__2(Core.Entities.Country)": {
+          "Lines": {
+            "75": 2795
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__3(Core.Entities.Product)": {
+          "Lines": {
+            "88": 2430
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__4(Core.Entities.Segment)": {
+          "Lines": {
+            "97": 1700
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__5(Core.Entities.Country)": {
+          "Lines": {
+            "98": 2100
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Services.Implementations.FileService/<>c__DisplayClass5_0::<DatabaseSaveAsync>b__6(Core.Entities.Product)": {
+          "Lines": {
+            "99": 2430
+          },
+          "Branches": []
+        }
+      },
+      "Business.Services.Implementations.FileService/<DatabaseSaveAsync>d__5": {
+        "System.Void Business.Services.Implementations.FileService/<DatabaseSaveAsync>d__5::MoveNext()": {
+          "Lines": {
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1403,
+            "55": 700,
+            "58": 5,
+            "59": 5,
+            "60": 5,
+            "61": 5,
+            "62": 5,
+            "63": 5,
+            "64": 5,
+            "65": 5,
+            "67": 6,
+            "68": 6,
+            "69": 6,
+            "70": 6,
+            "71": 6,
+            "72": 6,
+            "73": 6,
+            "74": 6,
+            "76": 5,
+            "77": 5,
+            "78": 5,
+            "79": 5,
+            "80": 5,
+            "81": 5,
+            "82": 5,
+            "83": 5,
+            "84": 700,
+            "85": 700,
+            "86": 700,
+            "87": 700,
+            "89": 700,
+            "90": 700,
+            "91": 700,
+            "92": 700,
+            "93": 700,
+            "94": 700,
+            "95": 700,
+            "96": 700,
+            "100": 700,
+            "101": 700,
+            "102": 700,
+            "103": 700,
+            "104": 1,
+            "105": 1
+          },
+          "Branches": [
+            {
+              "Line": 51,
+              "Offset": 510,
+              "EndOffset": 512,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 51,
+              "Offset": 510,
+              "EndOffset": 519,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 51,
+              "Offset": 531,
+              "EndOffset": 533,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 51,
+              "Offset": 531,
+              "EndOffset": 539,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 551,
+              "EndOffset": 553,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 52,
+              "Offset": 551,
+              "EndOffset": 560,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 572,
+              "EndOffset": 574,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 572,
+              "EndOffset": 580,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 592,
+              "EndOffset": 594,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 53,
+              "Offset": 592,
+              "EndOffset": 601,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 613,
+              "EndOffset": 615,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 613,
+              "EndOffset": 621,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 1
+            },
+            {
+              "Line": 54,
+              "Offset": 2063,
+              "EndOffset": 705,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 700
+            },
+            {
+              "Line": 57,
+              "Offset": 774,
+              "EndOffset": 779,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 5
+            },
+            {
+              "Line": 57,
+              "Offset": 774,
+              "EndOffset": 960,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 700
+            },
+            {
+              "Line": 66,
+              "Offset": 995,
+              "EndOffset": 1000,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 6
+            },
+            {
+              "Line": 66,
+              "Offset": 995,
+              "EndOffset": 1181,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 700
+            },
+            {
+              "Line": 75,
+              "Offset": 1216,
+              "EndOffset": 1221,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 5
+            },
+            {
+              "Line": 75,
+              "Offset": 1216,
+              "EndOffset": 1402,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 700
+            },
+            {
+              "Line": 54,
+              "Offset": 2063,
+              "EndOffset": 2068,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Business.Services.Implementations.FileService/<ExcelToDb>d__3": {
+        "System.Void Business.Services.Implementations.FileService/<ExcelToDb>d__3::MoveNext()": {
+          "Lines": {
+            "25": 2,
+            "26": 2,
+            "27": 0,
+            "28": 0,
+            "30": 2,
+            "31": 1,
+            "32": 1,
+            "34": 1,
+            "35": 1,
+            "36": 1
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 52,
+              "EndOffset": 54,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 52,
+              "EndOffset": 66,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 30,
+              "Offset": 109,
+              "EndOffset": 111,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 30,
+              "Offset": 109,
+              "EndOffset": 123,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "Business.Services.Implementations.FileService/<FileUploadAsync>d__4": {
+        "System.Void Business.Services.Implementations.FileService/<FileUploadAsync>d__4::MoveNext()": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 1,
+            "42": 1,
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Services\\Implementations\\ReportsService.cs": {
+      "Business.Services.Implementations.ReportsService": {
+        "System.Void Business.Services.Implementations.ReportsService::.ctor(Core.Abstracts.UnitOfWork.IUnitOfWork,MassTransit.ISendEndpointProvider)": {
+          "Lines": {
+            "16": 5,
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "20": 5
+          },
+          "Branches": []
+        }
+      },
+      "Business.Services.Implementations.ReportsService/<SendReport>d__3": {
+        "System.Void Business.Services.Implementations.ReportsService/<SendReport>d__3::MoveNext()": {
+          "Lines": {
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 1,
+            "45": 1,
+            "46": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "55": 1,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "80": 0,
+            "83": 1,
+            "84": 1,
+            "85": 1,
+            "86": 1
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 213,
+              "EndOffset": 239,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 213,
+              "EndOffset": 2095,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 23,
+              "Offset": 213,
+              "EndOffset": 3951,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 213,
+              "EndOffset": 5807,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 213,
+              "EndOffset": 6839,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Extensions\\FileExtensions.cs": {
+      "Business.Extensions.FileExtensions": {
+        "System.Boolean Business.Extensions.FileExtensions::CheckFileType(Microsoft.AspNetCore.Http.IFormFile,System.String[])": {
+          "Lines": {
+            "15": 2,
+            "16": 2,
+            "17": 5,
+            "18": 2
+          },
+          "Branches": []
+        },
+        "System.Boolean Business.Extensions.FileExtensions::CheckFileSize(Microsoft.AspNetCore.Http.IFormFile,System.Int32)": {
+          "Lines": {
+            "26": 2,
+            "27": 2,
+            "28": 0,
+            "29": 0,
+            "31": 2,
+            "32": 2
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 23,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        }
+      },
+      "Business.Extensions.FileExtensions/<>c": {
+        "System.String Business.Extensions.FileExtensions/<>c::<FileUploadAsync>b__2_0(System.String,System.String)": {
+          "Lines": {
+            "36": 0
+          },
+          "Branches": []
+        }
+      },
+      "Business.Extensions.FileExtensions/<FileUploadAsync>d__2": {
+        "System.Void Business.Extensions.FileExtensions/<FileUploadAsync>d__2::MoveNext()": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Extensions\\StringExtensions.cs": {
+      "Business.Extensions.StringExtensions": {
+        "System.String Business.Extensions.StringExtensions::CharacterRegulatory(System.String,System.Int32)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 38,
+              "EndOffset": 40,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 38,
+              "EndOffset": 154,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 202,
+              "EndOffset": 204,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 202,
+              "EndOffset": 207,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Exceptions\\FileExceptions\\FileException.cs": {
+      "Business.Exceptions.FileExceptions.FileException": {
+        "System.Void Business.Exceptions.FileExceptions.FileException::.ctor()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileException::.ctor(System.String)": {
+          "Lines": {
+            "6": 3
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Exceptions\\FileExceptions\\FileSizeException.cs": {
+      "Business.Exceptions.FileExceptions.FileSizeException": {
+        "System.Void Business.Exceptions.FileExceptions.FileSizeException::.ctor()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileSizeException::.ctor(System.String)": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileSizeException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Exceptions\\FileExceptions\\FileTypeException.cs": {
+      "Business.Exceptions.FileExceptions.FileTypeException": {
+        "System.Void Business.Exceptions.FileExceptions.FileTypeException::.ctor()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileTypeException::.ctor(System.String)": {
+          "Lines": {
+            "6": 3
+          },
+          "Branches": []
+        },
+        "System.Void Business.Exceptions.FileExceptions.FileTypeException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Reports\\EmailDto.cs": {
+      "Business.DTOs.Reports.EmailDto": {
+        "System.String Business.DTOs.Reports.EmailDto::get_Email()": {
+          "Lines": {
+            "5": 8
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Reports\\GetSalesByDiscount.cs": {
+      "Business.DTOs.Reports.GetSalesByDiscount": {
+        "System.String Business.DTOs.Reports.GetSalesByDiscount::get_Name()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Reports.GetSalesByDiscount::get_Discounts()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Reports\\GetSalesByEntityDto.cs": {
+      "Business.DTOs.Reports.GetSalesByEntityDto": {
+        "System.String Business.DTOs.Reports.GetSalesByEntityDto::get_Name()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Reports.GetSalesByEntityDto::get_UnitsSold()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Reports.GetSalesByEntityDto::get_GrosSales()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Reports.GetSalesByEntityDto::get_Discounts()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Reports.GetSalesByEntityDto::get_Profit()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Reports\\SendReportDto.cs": {
+      "Business.DTOs.Reports.SendReportDto": {
+        "Business.Enums.Report Business.DTOs.Reports.SendReportDto::get_Report()": {
+          "Lines": {
+            "9": 6
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Business.DTOs.Reports.EmailDto> Business.DTOs.Reports.SendReportDto::get_SendEmails()": {
+          "Lines": {
+            "11": 10
+          },
+          "Branches": []
+        },
+        "System.DateTime Business.DTOs.Reports.SendReportDto::get_StartDate()": {
+          "Lines": {
+            "13": 9
+          },
+          "Branches": []
+        },
+        "System.DateTime Business.DTOs.Reports.SendReportDto::get_EndDate()": {
+          "Lines": {
+            "15": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\RabbitMq\\SendReportMq.cs": {
+      "Business.DTOs.RabbitMq.SendReportMq": {
+        "System.String Business.DTOs.RabbitMq.SendReportMq::get_Name()": {
+          "Lines": {
+            "7": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Business.DTOs.Reports.GetSalesByDiscount> Business.DTOs.RabbitMq.SendReportMq::get_ReportDiscount()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Business.DTOs.Reports.GetSalesByEntityDto> Business.DTOs.RabbitMq.SendReportMq::get_ReportEntity()": {
+          "Lines": {
+            "9": 1
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<Business.DTOs.Reports.EmailDto> Business.DTOs.RabbitMq.SendReportMq::get_Emails()": {
+          "Lines": {
+            "10": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\File\\FileUploadDto.cs": {
+      "Business.DTOs.File.FileUploadDto": {
+        "Microsoft.AspNetCore.Http.IFormFile Business.DTOs.File.FileUploadDto::get_File()": {
+          "Lines": {
+            "7": 7
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Excel\\ExcelDataDto.cs": {
+      "Business.DTOs.Excel.ExcelDataDto": {
+        "System.String Business.DTOs.Excel.ExcelDataDto::get_Segment()": {
+          "Lines": {
+            "7": 4100
+          },
+          "Branches": []
+        },
+        "System.String Business.DTOs.Excel.ExcelDataDto::get_Country()": {
+          "Lines": {
+            "8": 4900
+          },
+          "Branches": []
+        },
+        "System.String Business.DTOs.Excel.ExcelDataDto::get_Product()": {
+          "Lines": {
+            "9": 7990
+          },
+          "Branches": []
+        },
+        "System.String Business.DTOs.Excel.ExcelDataDto::get_DiscountBand()": {
+          "Lines": {
+            "11": 700
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_UnitSold()": {
+          "Lines": {
+            "14": 2100
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_ManufacturingPrice()": {
+          "Lines": {
+            "17": 1400
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_SalePrice()": {
+          "Lines": {
+            "20": 2100
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_GrossSales()": {
+          "Lines": {
+            "22": 1400
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_Discounts()": {
+          "Lines": {
+            "23": 2100
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_Sales()": {
+          "Lines": {
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_COGS()": {
+          "Lines": {
+            "26": 700
+          },
+          "Branches": []
+        },
+        "System.Decimal Business.DTOs.Excel.ExcelDataDto::get_Profit()": {
+          "Lines": {
+            "27": 700
+          },
+          "Branches": []
+        },
+        "System.DateTime Business.DTOs.Excel.ExcelDataDto::get_Date()": {
+          "Lines": {
+            "28": 1400
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\DTOs\\Common\\ErrorResponse.cs": {
+      "Business.DTOs.Common.ErrorResponse": {
+        "System.Int32 Business.DTOs.Common.ErrorResponse::get_StatusCode()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String Business.DTOs.Common.ErrorResponse::get_Message()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Consumer\\ReportConsumer.cs": {
+      "Business.Consumer.ReportConsumer": {
+        "System.Void Business.Consumer.ReportConsumer::.ctor(Business.Services.Abstracts.IFileService,Business.Services.Abstracts.IEmailService)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "Business.Consumer.ReportConsumer/<Consume>d__3": {
+        "System.Void Business.Consumer.ReportConsumer/<Consume>d__3::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 53,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 143,
+              "EndOffset": 145,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 143,
+              "EndOffset": 209,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Business\\Common\\Helper.cs": {
+      "Business.Common.Helper": {
+        "System.String Business.Common.Helper::GenerateUniqueDateName()": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Core.dll": {
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\Country.cs": {
+      "Core.Entities.Country": {
+        "System.String Core.Entities.Country::get_Name()": {
+          "Lines": {
+            "7": 4200
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Core.Entities.SaleTransaction> Core.Entities.Country::get_SaleTransactions()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\Price.cs": {
+      "Core.Entities.Price": {
+        "System.Decimal Core.Entities.Price::get_SalePrice()": {
+          "Lines": {
+            "7": 700
+          },
+          "Branches": []
+        },
+        "System.Decimal Core.Entities.Price::get_ManufacturingPrice()": {
+          "Lines": {
+            "8": 700
+          },
+          "Branches": []
+        },
+        "System.Guid Core.Entities.Price::get_ProductId()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "Core.Entities.Product Core.Entities.Price::get_Product()": {
+          "Lines": {
+            "10": 700
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Core.Entities.SaleTransaction> Core.Entities.Price::get_SaleTransactions()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\Product.cs": {
+      "Core.Entities.Product": {
+        "System.String Core.Entities.Product::get_Name()": {
+          "Lines": {
+            "7": 7290
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Core.Entities.SaleTransaction> Core.Entities.Product::get_SaleTransactions()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Core.Entities.Price> Core.Entities.Product::get_Prices()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\SaleTransaction.cs": {
+      "Core.Entities.SaleTransaction": {
+        "System.Decimal Core.Entities.SaleTransaction::get_UnitSold()": {
+          "Lines": {
+            "7": 700
+          },
+          "Branches": []
+        },
+        "System.Decimal Core.Entities.SaleTransaction::get_Discounts()": {
+          "Lines": {
+            "8": 700
+          },
+          "Branches": []
+        },
+        "System.Decimal Core.Entities.SaleTransaction::get_Sales()": {
+          "Lines": {
+            "9": 700
+          },
+          "Branches": []
+        },
+        "System.DateTime Core.Entities.SaleTransaction::get_Date()": {
+          "Lines": {
+            "10": 700
+          },
+          "Branches": []
+        },
+        "System.Guid Core.Entities.SaleTransaction::get_PriceId()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Core.Entities.Price Core.Entities.SaleTransaction::get_Price()": {
+          "Lines": {
+            "12": 700
+          },
+          "Branches": []
+        },
+        "System.Guid Core.Entities.SaleTransaction::get_ProductId()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "Core.Entities.Product Core.Entities.SaleTransaction::get_Product()": {
+          "Lines": {
+            "14": 700
+          },
+          "Branches": []
+        },
+        "System.Guid Core.Entities.SaleTransaction::get_SegmentId()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "Core.Entities.Segment Core.Entities.SaleTransaction::get_Segment()": {
+          "Lines": {
+            "16": 700
+          },
+          "Branches": []
+        },
+        "System.Guid Core.Entities.SaleTransaction::get_CountryId()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Core.Entities.Country Core.Entities.SaleTransaction::get_Country()": {
+          "Lines": {
+            "18": 700
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\Segment.cs": {
+      "Core.Entities.Segment": {
+        "System.String Core.Entities.Segment::get_Name()": {
+          "Lines": {
+            "7": 3400
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<Core.Entities.SaleTransaction> Core.Entities.Segment::get_SaleTransactions()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Core\\Entities\\Base\\BaseEntity.cs": {
+      "Core.Entities.Base.BaseEntity`1": {
+        "TKey Core.Entities.Base.BaseEntity`1::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Data.dll": {
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Migrations\\20220819042657_Int_Mig.cs": {
+      "Data.Migrations.Int_Mig": {
+        "System.Void Data.Migrations.Int_Mig::Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0
+          },
+          "Branches": []
+        },
+        "System.Void Data.Migrations.Int_Mig::Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)": {
+          "Lines": {
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "148": 0,
+            "149": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Migrations\\20220819042657_Int_Mig.Designer.cs": {
+      "Data.Migrations.Int_Mig": {
+        "System.Void Data.Migrations.Int_Mig::BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "19": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "204": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Migrations\\AppDbContextModelSnapshot.cs": {
+      "Data.Migrations.AppDbContextModelSnapshot": {
+        "System.Void Data.Migrations.AppDbContextModelSnapshot::BuildModel(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "178": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "202": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\CountryRepository.cs": {
+      "Data.Implementations.CountryRepository": {
+        "System.Void Data.Implementations.CountryRepository::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\PriceRepository.cs": {
+      "Data.Implementations.PriceRepository": {
+        "System.Void Data.Implementations.PriceRepository::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\ProductRepository.cs": {
+      "Data.Implementations.ProductRepository": {
+        "System.Void Data.Implementations.ProductRepository::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\SaleTransactionRepository.cs": {
+      "Data.Implementations.SaleTransactionRepository": {
+        "System.Void Data.Implementations.SaleTransactionRepository::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\SegmentRepository.cs": {
+      "Data.Implementations.SegmentRepository": {
+        "System.Void Data.Implementations.SegmentRepository::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\UnitOfWork\\UnitOfWork.cs": {
+      "Data.Implementations.UnitOfWork.UnitOfWork": {
+        "Core.Abstracts.ISegmentRepository Data.Implementations.UnitOfWork.UnitOfWork::get_SegmentRepository()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": [
+            {
+              "Line": 20,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 7,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Core.Abstracts.IProductRepository Data.Implementations.UnitOfWork.UnitOfWork::get_ProductRepository()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 7,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Core.Abstracts.ICountryRepository Data.Implementations.UnitOfWork.UnitOfWork::get_CountryRepository()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 7,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Core.Abstracts.ISaleTransactionRepository Data.Implementations.UnitOfWork.UnitOfWork::get_SaleTransactionRepository()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 7,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "Core.Abstracts.IPriceRepository Data.Implementations.UnitOfWork.UnitOfWork::get_PriceRepository()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 7,
+              "EndOffset": 30,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Data.Implementations.UnitOfWork.UnitOfWork::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      },
+      "Data.Implementations.UnitOfWork.UnitOfWork/<SaveAsync>d__17": {
+        "System.Void Data.Implementations.UnitOfWork.UnitOfWork/<SaveAsync>d__17::MoveNext()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Implementations\\Base\\Repository.cs": {
+      "Data.Implementations.Base.Repository`1": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<TEntity> Data.Implementations.Base.Repository`1::get_Table()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "TEntity Data.Implementations.Base.Repository`1::Remove(TEntity)": {
+          "Lines": {
+            "118": 0,
+            "119": 0,
+            "120": 0
+          },
+          "Branches": []
+        },
+        "TEntity Data.Implementations.Base.Repository`1::Update(TEntity)": {
+          "Lines": {
+            "122": 0,
+            "123": 0,
+            "124": 0
+          },
+          "Branches": []
+        },
+        "System.Linq.IQueryable`1<TEntity> Data.Implementations.Base.Repository`1::GetQuery(System.String[])": {
+          "Lines": {
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0
+          },
+          "Branches": [
+            {
+              "Line": 132,
+              "Offset": 24,
+              "EndOffset": 26,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 134,
+              "Offset": 58,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 134,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 24,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Data.Implementations.Base.Repository`1::.ctor(Data.DataAccess.AppDbContext)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<AddAsync>d__10": {
+        "System.Void Data.Implementations.Base.Repository`1/<AddAsync>d__10::MoveNext()": {
+          "Lines": {
+            "114": 0,
+            "115": 0,
+            "116": 0
+          },
+          "Branches": []
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetAllAsync>d__4": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 63,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 93,
+              "EndOffset": 98,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 93,
+              "EndOffset": 239,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetAllAsync>d__5`1": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetAllAsync>d__5`1::MoveNext()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 86,
+              "EndOffset": 110,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 116,
+              "EndOffset": 121,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 127,
+              "EndOffset": 132,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 127,
+              "EndOffset": 304,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 116,
+              "EndOffset": 509,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 515,
+              "EndOffset": 520,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 515,
+              "EndOffset": 706,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetAllWithSelectAsync>d__6`1": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetAllWithSelectAsync>d__6`1::MoveNext()": {
+          "Lines": {
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0
+          },
+          "Branches": [
+            {
+              "Line": 58,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 58,
+              "Offset": 63,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 93,
+              "EndOffset": 98,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 93,
+              "EndOffset": 250,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetAllWithSelectAsync>d__7`2": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetAllWithSelectAsync>d__7`2::MoveNext()": {
+          "Lines": {
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0
+          },
+          "Branches": [
+            {
+              "Line": 76,
+              "Offset": 86,
+              "EndOffset": 88,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 86,
+              "EndOffset": 110,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 116,
+              "EndOffset": 121,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 127,
+              "EndOffset": 132,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 127,
+              "EndOffset": 315,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 116,
+              "EndOffset": 531,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 537,
+              "EndOffset": 542,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 537,
+              "EndOffset": 739,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetAsync>d__8": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetAsync>d__8::MoveNext()": {
+          "Lines": {
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0
+          },
+          "Branches": [
+            {
+              "Line": 93,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 63,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 93,
+              "EndOffset": 98,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 93,
+              "EndOffset": 244,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<GetWithSelectAsync>d__9`1": {
+        "System.Void Data.Implementations.Base.Repository`1/<GetWithSelectAsync>d__9`1::MoveNext()": {
+          "Lines": {
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0
+          },
+          "Branches": [
+            {
+              "Line": 107,
+              "Offset": 63,
+              "EndOffset": 65,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 63,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 93,
+              "EndOffset": 98,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 93,
+              "EndOffset": 255,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "Data.Implementations.Base.Repository`1/<SaveAsync>d__13": {
+        "System.Void Data.Implementations.Base.Repository`1/<SaveAsync>d__13::MoveNext()": {
+          "Lines": {
+            "126": 0,
+            "127": 0,
+            "128": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\DataAccess\\AppDbContext.cs": {
+      "Data.DataAccess.AppDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<Core.Entities.Product> Data.DataAccess.AppDbContext::get_Products()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Core.Entities.Segment> Data.DataAccess.AppDbContext::get_Segments()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Core.Entities.Country> Data.DataAccess.AppDbContext::get_Countries()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Core.Entities.Price> Data.DataAccess.AppDbContext::get_Prices()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<Core.Entities.SaleTransaction> Data.DataAccess.AppDbContext::get_SaleTransactions()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void Data.DataAccess.AppDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void Data.DataAccess.AppDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<Data.DataAccess.AppDbContext>)": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Data\\Configurations\\ProductConfiguration.cs": {
+      "Data.Configurations.ProductConfiguration": {
+        "System.Void Data.Configurations.ProductConfiguration::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<Core.Entities.Product>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "PYP_Pre_Assignment.API.dll": {
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Program.cs": {
+      "Program": {
+        "System.Void Program::<Main>$(System.String[])": {
+          "Lines": {
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0
+          },
+          "Branches": [
+            {
+              "Line": 70,
+              "Offset": 409,
+              "EndOffset": 411,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 409,
+              "EndOffset": 429,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 17,
+              "EndOffset": 41,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 48,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Middelwares\\ExceptionHandlerMiddelware.cs": {
+      "PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware": {
+        "System.Void PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware::.ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger`1<PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware>)": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1
+          },
+          "Branches": []
+        }
+      },
+      "PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware/<HandleExceptionAsync>d__4": {
+        "System.Void PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware/<HandleExceptionAsync>d__4::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0
+          },
+          "Branches": []
+        }
+      },
+      "PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware/<InvokeAsync>d__3": {
+        "System.Void PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelware/<InvokeAsync>d__3::MoveNext()": {
+          "Lines": {
+            "18": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 1
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 404,
+              "EndOffset": 406,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 404,
+              "EndOffset": 410,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 448,
+              "EndOffset": 450,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 448,
+              "EndOffset": 454,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelwareExtensions": {
+        "Microsoft.AspNetCore.Builder.IApplicationBuilder PYP_Pre_Assignment.API.Middelwares.ExceptionHandlerMiddelwareExtensions::UseExceptionMiddelware(Microsoft.AspNetCore.Builder.IApplicationBuilder)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "D:\\PYP_Projects\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\PYP_Pre_Assignment\\Controllers\\SaleController.cs": {
+      "PYP_Pre_Assignment.API.Controllers.SaleController": {
+        "System.Void PYP_Pre_Assignment.API.Controllers.SaleController::.ctor(Business.Services.Abstracts.IFileService,Business.Services.Abstracts.IReportsService)": {
+          "Lines": {
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "20": 5,
+            "21": 5
+          },
+          "Branches": []
+        }
+      },
+      "PYP_Pre_Assignment.API.Controllers.SaleController/<SendReport>d__4": {
+        "System.Void PYP_Pre_Assignment.API.Controllers.SaleController/<SendReport>d__4::MoveNext()": {
+          "Lines": {
+            "33": 1,
+            "34": 1,
+            "35": 1
+          },
+          "Branches": []
+        }
+      },
+      "PYP_Pre_Assignment.API.Controllers.SaleController/<UploadFile>d__3": {
+        "System.Void PYP_Pre_Assignment.API.Controllers.SaleController/<UploadFile>d__3::MoveNext()": {
+          "Lines": {
+            "24": 2,
+            "25": 2,
+            "26": 2,
+            "27": 2,
+            "28": 2,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

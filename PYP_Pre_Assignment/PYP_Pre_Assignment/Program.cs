@@ -2,9 +2,11 @@ using Business.Common;
 using Business.Consumer;
 using Business.Services.Abstracts;
 using Business.Services.Implementations;
+using Business.Validations;
 using Core.Abstracts.UnitOfWork;
 using Data.DataAccess;
 using Data.Implementations.UnitOfWork;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using MassTransit;
 using Microsoft.AspNetCore.HttpLogging;
@@ -55,9 +57,8 @@ builder.Services.AddMassTransit(config =>
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("SQlServer")));
 builder.Services.AddEndpointsApiExplorer();
 
-
-
 builder.Services.AddControllers();
+builder.Services.AddValidatorsFromAssembly(typeof(EmailValidation).Assembly);
 builder.Services.AddFluentValidationAutoValidation();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();

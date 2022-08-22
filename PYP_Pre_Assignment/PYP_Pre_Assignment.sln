@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{5718FC5B-8684-4804-86BC-FA6D0A6226D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{D963B766-02FE-4F48-AE6C-2101C9D82385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{D963B766-02FE-4F48-AE6C-2101C9D82385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{75882FAC-A791-4F36-A176-52B168A1E120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PYP_Pre_Assigment.Test", "Features\PYP_Pre_Assigment.Test\PYP_Pre_Assigment.Test.csproj", "{E4A70C15-C70F-4969-930F-72C43F373D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{D963B766-02FE-4F48-AE6C-2101C9D82385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D963B766-02FE-4F48-AE6C-2101C9D82385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D963B766-02FE-4F48-AE6C-2101C9D82385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4A70C15-C70F-4969-930F-72C43F373D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4A70C15-C70F-4969-930F-72C43F373D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4A70C15-C70F-4969-930F-72C43F373D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4A70C15-C70F-4969-930F-72C43F373D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E4A70C15-C70F-4969-930F-72C43F373D39} = {75882FAC-A791-4F36-A176-52B168A1E120}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {923FDC67-90C5-4E35-AA1A-A76552726366}

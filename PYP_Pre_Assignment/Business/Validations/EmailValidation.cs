@@ -13,8 +13,8 @@ namespace Business.Validations
                 .NotNull()
                 .EmailAddress()
                 .WithMessage("Please enter an email address")
-                .Matches(@"[a-zA-Z0-9]+@code.edu.az")
-                .WithMessage("The email address should only be with code.edu.az.");
-        }
+                .Matches(@"^[a-zA-Z0-9]+@code.edu.az$")
+                .WithMessage("The email address should only be with code.edu.az");
+            }
     }
 }

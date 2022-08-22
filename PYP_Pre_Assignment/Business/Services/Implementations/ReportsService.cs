@@ -77,7 +77,7 @@ namespace Business.Services.Implementations
                     sendReport.Name = "sales_by_dicsount";
                     break;
                 default:
-                    throw new Exception("Not found");
+                    throw new Exception("Query Not found");
 
             }
             ISendEndpoint sendEndpoint = await _sendEndpointProvider.GetSendEndpoint(new($"queue:{RabbitMqConstants.SendReportQueue}"));

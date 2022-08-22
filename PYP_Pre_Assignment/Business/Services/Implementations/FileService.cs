@@ -25,11 +25,11 @@ namespace Business.Services.Implementations
         {
             if (file.File.CheckFileSize(5120))
             {
-                throw new FileTypeException("File size should not exceed 5 msb");
+                throw new FileSizeException("File size should not exceed 5 msb.");
             }
             if (!file.File.CheckFileType(".xls", ".xlsx"))
             {
-                throw new FileSizeException("The file type should be xls or xlsx");
+                throw new FileTypeException("The file type should be xls or xlsx.");
             }
             IEnumerable<ExcelDataDto> excelDatas = new ExcelMapper(await FileUploadAsync(file.File)).Fetch<ExcelDataDto>();
             await DatabaseSaveAsync(excelDatas);
@@ -48,9 +48,9 @@ namespace Business.Services.Implementations
             List<Product> productsDb = await _unitOfWork.ProductRepository.GetAllAsync();
             List<Segment> segmentsDb = await _unitOfWork.SegmentRepository.GetAllAsync();
             List<Country> countriesDb = await _unitOfWork.CountryRepository.GetAllAsync();
-            List<Product> products = new List<Product>(productsDb) ?? new List<Product>();
-            List<Segment> segments = new List<Segment>(segmentsDb) ?? new List<Segment>();
-            List<Country> countries = new List<Country>(countriesDb) ?? new List<Country>();
+            List<Product> products = productsDb != null ? (new List<Product>(productsDb)) ?? new List<Product>() : new List<Product>();
+            List<Segment> segments = segmentsDb != null ? (new List<Segment>(segmentsDb)) ?? new List<Segment>() : new List<Segment>();
+            List<Country> countries = countriesDb != null ? new List<Country>(countriesDb)  ?? new List<Country>() : new List<Country>();
             foreach (var excel in excelDatas)
             {
 

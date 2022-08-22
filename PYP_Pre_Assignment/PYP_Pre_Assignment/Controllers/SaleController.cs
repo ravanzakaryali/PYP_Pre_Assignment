@@ -29,15 +29,9 @@ namespace PYP_Pre_Assignment.API.Controllers
             return NoContent();
         }
         [HttpPost("send-report/{type}")]
-        public async Task<IActionResult> SendReport([FromRoute] Report type, [FromBody] List<EmailDto> emails, [FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
+        public async Task<IActionResult> SendReport([FromQuery] SendReportDto sendReport)
         {
-            return Ok(await _reportsService.SendReport(new SendReportDto()
-            {
-                EndDate = endDate,
-                StartDate = startDate,
-                Report = type,
-                SendEmails = emails
-            }));
-        }
+            return Ok(await _reportsService.SendReport(sendReport));
+           }
     }
 }

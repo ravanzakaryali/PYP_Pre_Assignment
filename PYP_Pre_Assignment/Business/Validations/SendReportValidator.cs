@@ -14,6 +14,8 @@ namespace Business.Validations
             RuleFor(sr => sr.EndDate)
                 .NotEmpty()
                 .NotNull();
+            RuleForEach(s => s.SendEmails)
+                .SetValidator(new EmailValidation());
 
             RuleFor(sr => sr).Must(sr => sr.EndDate > sr.StartDate)
                 .WithMessage("EndTime must greater than StartTime");
