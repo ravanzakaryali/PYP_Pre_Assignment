@@ -73,16 +73,16 @@ namespace PYP_Pre_Assigment.Test.ControllersTest
 
         }
 
-        [Fact]
-        public async void UploadFile_ValidObjectPassed_ReturnsOkResult()
-        {
-            var fileName = "example_data.xlsx";
-            var currentDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            using FileStream fileStream = new(Path.Combine(currentDir, fileName), FileMode.Open);
-            var file = new FormFile(fileStream, 0, fileStream.Length, null, Path.GetFileName(fileStream.Name));
-            var result = await _controller.UploadFile(file);
-            Assert.IsType<NoContentResult>(result);
-        }
+        //[Fact]
+        //public async void UploadFile_ValidObjectPassed_ReturnsOkResult()
+        //{
+        //    var fileName = "example_data.xlsx";
+        //    var currentDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        //    using FileStream fileStream = new(Path.Combine(currentDir, fileName), FileMode.Open);
+        //    var file = new FormFile(fileStream, 0, fileStream.Length, null, Path.GetFileName(fileStream.Name));
+        //    var result = await _controller.UploadFile(file);
+        //    Assert.IsType<NoContentResult>(result);
+        //}
 
         [Fact]
         public async Task UploadFile_InValidObjectPassed_ReturnsBadResult()
